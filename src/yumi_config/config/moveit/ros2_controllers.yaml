@@ -42,7 +42,6 @@ left_arm_controller:
       - yumi_joint_6_l
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -59,7 +58,6 @@ right_arm_controller:
       - yumi_joint_6_r
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -70,7 +68,6 @@ left_gripper_controller:
       - gripper_l_joint
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -81,7 +78,6 @@ right_gripper_controller:
       - gripper_r_joint
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -107,7 +103,6 @@ whole_body_controller:
       - gripper_r_joint
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity
@@ -133,7 +128,6 @@ servo_controller:
       - gripper_r_joint
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
       - velocity

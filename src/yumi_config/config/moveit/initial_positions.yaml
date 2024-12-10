@@ -3,7 +3,7 @@
 initial_positions:
   gripper_l_joint: 0
   gripper_r_joint: 0
-  yumi_joint_1_l: 1.0
+  yumi_joint_1_l: -1.0
   yumi_joint_1_r: 1.0
   yumi_joint_2_l: 0
   yumi_joint_2_r: 0
