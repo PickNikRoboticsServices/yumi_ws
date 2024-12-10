@@ -55,14 +55,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/body.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/body_decimated.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/body.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/body_decimated.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </collision>
@@ -97,14 +97,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_1.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_1.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_1.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_1.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -127,14 +127,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_2.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_2.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_2.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_2.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -157,14 +157,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_3.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_3.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_3.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_3.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -187,14 +187,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_4.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_4.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_4.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_4.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -217,14 +217,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_5.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_5.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_5.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_5.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -247,14 +247,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_6.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_6.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_6.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_6.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -277,14 +277,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_7.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_7.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_7.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_7.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -308,14 +308,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_1.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_1.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_1.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_1.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -338,14 +338,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_2.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_2.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_2.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_2.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -368,14 +368,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_3.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_3.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_3.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_3.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -398,14 +398,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_4.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_4.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_4.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_4.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -428,14 +428,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_5.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_5.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_5.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_5.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -458,14 +458,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_6.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_6.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_6.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_6.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -488,14 +488,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/link_7.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/link_7.stl"/>
       </geometry>
       <material name="Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/coarse/link_7.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/coarse/link_7.stl"/>
       </geometry>
       <material name="Grey"/>
     </collision>
@@ -662,14 +662,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/base.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/base.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/base.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/base.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </collision>
@@ -680,7 +680,7 @@
     <child link="gripper_r_finger_r"/>
     <origin rpy="0 0 0" xyz="0 -0.0065 0.0837"/>
     <axis xyz="-1 0 0"/>
-    <limit effort="20" lower="0" upper="0.025" velocity="2"/>
+    <limit effort="20" lower="-0.1" upper="0.025" velocity="2"/>
     <dynamics damping="1.0"/>
   </joint>
   <link name="gripper_r_finger_r">
@@ -692,14 +692,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </collision>
@@ -723,14 +723,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </collision>
@@ -774,14 +774,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/base.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/base.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/base.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/base.stl"/>
       </geometry>
       <material name="Light_Grey"/>
     </collision>
@@ -792,7 +792,7 @@
     <child link="gripper_l_finger_r"/>
     <origin rpy="0 0 0" xyz="0 -0.0065 0.0837"/>
     <axis xyz="-1 0 0"/>
-    <limit effort="20" lower="0" upper="0.025" velocity="2"/>
+    <limit effort="20" lower="-0.1" upper="0.025" velocity="2"/>
     <dynamics damping="1.0"/>
   </joint>
   <link name="gripper_l_finger_r">
@@ -804,14 +804,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </collision>
@@ -835,14 +835,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="package://yumi_config/yumi_description/meshes/gripper/coarse/finger.stl"/>
+        <mesh filename="package://yumi_config/yumi_description/urdf/meshes/gripper/coarse/finger.stl"/>
       </geometry>
       <material name="Blue"/>
     </collision>

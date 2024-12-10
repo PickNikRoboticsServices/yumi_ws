@@ -12,6 +12,12 @@
  
   <xacro:macro name="yumi" params="parent name hardware_interface *origin">
 
+    <link name="world"></link>
+    <joint name="world_to_base" type="fixed">
+      <parent link="world"/>
+      <child link="yumi_base_link"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
     <link name="yumi_base_link"></link>
 
     <joint name="${name}_base_link_to_body" type="fixed">
