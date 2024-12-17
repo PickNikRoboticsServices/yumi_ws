@@ -54,8 +54,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 # 1. Uncomment the ENV and RUN entries below
 # 2. Replace the 'nvidia-driver-555' apt package with the Nvidia driver version on your host, e.g. nvidia-driver-535, nvidia-driver-555. Use nvidia-smi on your host to determine the driver version.
 # After rebuilding via `moveit_pro build` verify the drivers are active in your container by running `nvidia_smi` inside of `moveit_pro shell`.
-# ENV DEBIAN_FRONTEND=noninteractive
-# RUN apt update && apt install -y software-properties-common
+
 # RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 #     --mount=type=cache,target=/var/lib/apt,sharing=locked \ 
 #    add-apt-repository ppa:graphics-drivers/ppa && \
@@ -65,23 +64,29 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
 # You can also add any necessary apt-get install, pip install, etc. commands at this point.
 # NOTE: The /opt/overlay_ws folder contains MoveIt Pro binary packages and the source file.
 # hadolint ignore=SC1091
-RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
-    --mount=type=cache,target=/var/lib/apt,sharing=locked \
-    . /opt/overlay_ws/install/setup.sh && \
-    apt-get update && \
-    rosdep install -q -y \
-      --from-paths src \
-      --ignore-src
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt install -y software-properties-common python3-vcstool
 
 # Set up colcon defaults for the new user
 USER ${USERNAME}
+RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
+    --mount=type=cache,target=/var/lib/apt,sharing=locked \
+    . /opt/overlay_ws/install/setup.sh
+
 RUN colcon mixin add default \
     https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml && \
     colcon mixin update && \
     colcon metadata add default \
     https://raw.githubusercontent.com/colcon/colcon-metadata-repository/master/index.yaml && \
     colcon metadata update
+
 COPY colcon-defaults.yaml /home/${USERNAME}/.colcon/defaults.yaml
+
+# Yumi depends on the abb_ros2 drivers
+# Clone the abb_ros2 repo and install dependencies
+RUN cd src && git clone https://github.com/PickNikRobotics/abb_ros2.git
+RUN vcs import src < src/abb_ros2/abb.repos
+RUN rosdep update && rosdep install --from-paths src -r -y --ignore-src 
 
 # hadolint ignore=DL3002
 USER root
