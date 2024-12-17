@@ -4,6 +4,7 @@
 [submodule "src/dependencies/abb_ros2"]
 	path = src/dependencies/abb_ros2
 	url = https://github.com/PickNikRobotics/abb_ros2.git
+	branch = humble
 [submodule "src/dependencies/abb_libegm"]
 	path = src/dependencies/abb_libegm
 	url = https://github.com/ros-industrial/abb_libegm.git
