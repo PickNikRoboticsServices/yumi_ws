@@ -7,7 +7,13 @@
 
     <!-- Import control_xacro -->
     <xacro:include filename="yumi.ros2_control.xacro" />
-
+    
+    <link name="world"/>
+    <joint name="world_to_base" type="fixed">
+      <parent link="world"/>
+      <child link="yumi_base_link"/>
+      <origin xyz="0 0 0.25" rpy="0 0 1.57"/>
+    </joint>
 
     <xacro:yumi_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
 
