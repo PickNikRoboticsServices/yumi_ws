@@ -82,10 +82,7 @@ RUN colcon mixin add default \
 
 COPY colcon-defaults.yaml /home/${USERNAME}/.colcon/defaults.yaml
 
-# Yumi depends on the abb_ros2 drivers
-# Clone the abb_ros2 repo and install dependencies
-RUN cd src && git clone https://github.com/PickNikRobotics/abb_ros2.git
-RUN vcs import src < src/abb_ros2/abb.repos
+# install dependencies
 RUN rosdep update && rosdep install --from-paths src -r -y --ignore-src 
 
 # hadolint ignore=DL3002
