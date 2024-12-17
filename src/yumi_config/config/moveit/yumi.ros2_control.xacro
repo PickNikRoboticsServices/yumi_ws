@@ -12,14 +12,19 @@
                 <plugin>mock_components/GenericSystem</plugin>
                 <param name="prefix">${prefix}</param>
               </xacro:if>
-              <xacro:if value="${hardware_interface == 'sim'}"> -->
+              <xacro:if value="${hardware_interface == 'sim'}">
               <plugin>picknik_mujoco_ros/MujocoSystem</plugin>
               <param name="mujoco_model">yumi_description/urdf/scene.xml</param>
               <param name="mujoco_viewer">true</param>
               <param name="mujoco_model_package">yumi_config</param>
               <param name="render_publish_rate">10</param>
               <param name="tf_publish_rate">60</param>
-              <!-- </xacro:if> -->
+               </xacro:if> -->
+              <plugin>abb_hardware_interface/ABBSystemHardware</plugin>
+              <param name="rws_port">80</param>
+              <param name="rws_ip">127.0.0.1</param>
+              <!-- The following parameter is used for non-MultiMove only -->
+              <param name="egm_port">6511</param>
             </hardware>
             <joint name="yumi_joint_1_l">
                 <command_interface name="position"/>
