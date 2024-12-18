@@ -3,9 +3,7 @@
   <name>yumi_config</name>
   <version>6.5.0</version>
 
-  <description>
-    Base configuration package for ABB YUMI
-  </description>
+  <description>Base configuration package for ABB YUMI</description>
 
   <maintainer email="support@picknik.ai">MoveIt Pro Maintainer</maintainer>
 

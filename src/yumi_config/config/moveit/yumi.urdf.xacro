@@ -1,20 +1,26 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="yumi">
-    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+  <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+  <xacro:arg name="hardware_interface" default="mock"/>
+  <xacro:property name="hardware_interface" value="$(arg hardware_interface)"/>
+  <xacro:arg name="rws_ip" default="None"/>
+  <xacro:property name="rws_ip" value="$(arg rws_ip)"/>
+  <xacro:arg name="rws_port" default="80"/>
+  <xacro:property name="rws_port" value="$(arg rws_port)"/>
 
-    <!-- Import yumi urdf file -->
-    <xacro:include filename="$(find yumi_config)/yumi_description/urdf/yumi.urdf" />
+  <!-- Import yumi urdf file -->
+  <xacro:include filename="$(find yumi_config)/yumi_description/urdf/yumi.urdf" />
 
-    <!-- Import control_xacro -->
-    <xacro:include filename="yumi.ros2_control.xacro" />
-    
-    <link name="world"/>
-    <joint name="world_to_base" type="fixed">
-      <parent link="world"/>
-      <child link="yumi_base_link"/>
-      <origin xyz="0 0 0.25" rpy="0 0 1.57"/>
-    </joint>
+  <!-- Import control_xacro -->
+  <xacro:include filename="yumi.ros2_control.xacro" />
 
-    <xacro:yumi_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+  <link name="world"/>
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="yumi_base_link"/>
+    <origin xyz="0 0 0.25" rpy="0 0 1.57"/>
+  </joint>
+
+  <xacro:yumi_ros2_control name="YumiSystem" initial_positions_file="$(arg initial_positions_file)" hardware_interface="$(arg hardware_interface)"/>
 
 </robot>

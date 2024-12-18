@@ -34,7 +34,9 @@ hardware:
     # Specify any additional parameters required for the URDF.
     # Many of these are specific to the UR descriptions packages, and can be customized as needed.
     # [Optional]
-    urdf_params: []
+    urdf_params:
+        # Use "mock", "sim", or "real"
+      - hardware_interface: "real"
 
 # Sets ROS global params for launch.
 # [Optional]

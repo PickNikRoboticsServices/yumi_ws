@@ -1,3 +1,19 @@
-[submodule "src/picknik_accessories"]
-	path = src/picknik_accessories
+[submodule "src/dependencies/picknik_accessories"]
+	path = src/dependencies/picknik_accessories
 	url = https://github.com/PickNikRobotics/picknik_accessories.git
+[submodule "src/dependencies/abb_ros2"]
+	path = src/dependencies/abb_ros2
+	url = https://github.com/PickNikRobotics/abb_ros2.git
+	branch = humble
+[submodule "src/dependencies/abb_libegm"]
+	path = src/dependencies/abb_libegm
+	url = https://github.com/ros-industrial/abb_libegm.git
+[submodule "src/dependencies/abb_librws"]
+	path = src/dependencies/abb_librws
+	url = https://github.com/ros-industrial/abb_librws.git
+[submodule "src/dependencies/abb_egm_rws_managers"]
+	path = src/dependencies/abb_egm_rws_managers
+	url = https://github.com/ros-industrial/abb_egm_rws_managers.git
+[submodule "src/dependencies/abb_ros2_msgs"]
+	path = src/dependencies/abb_ros2_msgs
+	url = https://github.com/gbartyzel/abb_ros2_msgs.git

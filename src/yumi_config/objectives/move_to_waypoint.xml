@@ -41,10 +41,7 @@
       <input_port name="waypoint_name" default="" />
       <input_port name="joint_group_name" default="whole_body" />
       <input_port name="planner_interface" default="moveit_default" />
-      <input_port
-        name="controller_names"
-        default="/servo_controller"
-      />
+      <input_port name="controller_names" default="/servo_controller" />
       <MetadataFields>
         <Metadata subcategory="Motion - Execute" />
       </MetadataFields>
